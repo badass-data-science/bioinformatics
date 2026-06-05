@@ -41,7 +41,7 @@ for line in f:
     symbol = line.split(',')[1]
     kd = line.split(',')[2]
 
-    if not degradation_rate_map.has_key(symbol): 
+    if not symbol in degradation_rate_map:
         continue
 
     kd_list.append(kd)
@@ -188,9 +188,9 @@ f.close()
 chain = {}
 f = open('output/codaCODAchain1.txt')
 for i, line in enumerate(f):
-    if start.has_key(i):
+    if i in start:
         variable = start[i]['variable']
-    if not chain.has_key(variable):
+    if not variable in chain:
         chain[variable] = []
     chain[variable].append(float(line.split(' ')[1]))
 f.close()
