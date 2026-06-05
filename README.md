@@ -1,7 +1,7 @@
 # Bioinformatics Projects
 
-## Contents
+Contents are as follows:
 
-#### mRNA-Bayesian
+## mRNA-Bayesian
 
 Details a Bayesian method for filtering out mRNA turnover rate bias from siRNA knockdown measurements
